@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Quote Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Welcome</h1>
+  <div class="subtext">How do you feel right now?</div>
+  <div class="buttons">
+    <button onclick="showQuote('motivation')">No Motivation</button>
+    <button onclick="showQuote('depressed')">Depressed</button>
+    <button onclick="showQuote('more')">Something Lacking</button>
+    <button onclick="showQuote('lonely')">Lonely</button>
+    <button onclick="showQuote('better')">Need to Do Better</button>
+    <button onclick="showQuote('hope')">Lack of Hope</button>
+  </div>
+  <div class="quote-box" id="quoteBox"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
