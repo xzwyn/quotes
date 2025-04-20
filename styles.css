@@ -113,4 +113,38 @@ body {
        transform: translateY(-70%) scale(1.05);
      }
    }
-   
+@media screen and (max-width: 600px) {
+  body {
+    padding-top: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .buttons {
+    grid-template-columns: 1fr; /* stack buttons in one column */
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .quote-box {
+    font-size: 1.1em;
+    min-height: 5em;
+  }
+
+  h1 {
+    font-size: 1.6em;
+    text-align: center;
+  }
+
+  .subtext {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  body::before,
+  body::after {
+    width: 50vw; /* reduce side width for mobile */
+    filter: blur(20px);
+  }
+}
+
